@@ -29,9 +29,9 @@ static const uint8_t AHT10_MEASURE_CMD[] = {0xAC, 0x33, 0x00};
 
 static const uint8_t AHT10_POWERON_DELAY = 40;    // ms, for power on delay
 static const uint8_t AHT10_DEFAULT_DELAY = 80;    // ms, for calibration, temperature and humidity measurement
-static const uint8_t AHT10_CMD_DELAY = 350;  // ms, for other comands
+static const uint8_t AHT10_CMD_DELAY = 255;       // ms, for other comands
 
-static const uint8_t AHT10_ATTEMPTS = 4;         // safety margin, normally 3 attempts are enough: 3*30=90ms
+static const uint8_t AHT10_ATTEMPTS = 4;          // safety margin, normally 3 attempts are enough: 3*30=90ms
 static const uint8_t AHT10_CAL_ATTEMPTS = 12;
 
 static const uint8_t AHT10_STATUS_BUSY = 0x80;
